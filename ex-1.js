@@ -1,5 +1,15 @@
 function findStudentIndex(students, searchStudent) {
-	// เริ่มเขียนโค้ดตรงนี้จ้า
+
+	for(let i = 0; i < students.length; i++)
+		if(students[i] === searchStudent){
+			return i;
+		}
+	return -1;
+
 }
 
-// ตอบคำถามตรงนี้จ้า
+const students = ["Andrew", "Bobby", "Diana", "George", "Hannah", "Isaac", "Jasmine", "John"] 
+const index = findStudentIndex(students,"John")
+console.log(index);
+
+//*BigO = O(n)linear ทำงานตามจำนวนตัวของinput เข้าไป
