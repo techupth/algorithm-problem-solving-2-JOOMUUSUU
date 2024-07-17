@@ -12,4 +12,4 @@ const students = ["Andrew", "Bobby", "Diana", "George", "Hannah", "Isaac", "Jasm
 const index = findStudentIndex(students,"John")
 console.log(index);
 
-//*BigO = O(n)linear ทำงานตามจำนวนตัวของinput เข้าไป
+//*BigO = O(log n) Binary เป็นการค้นหาโดยที่ข้อมูลต้องมีการเรียกลำดับเเล้วหาตรงกลางของข้อมูล ซึ่งทำให้เหลือเเค่ครึ่งเดียวโดยเลือกฝั่งซ้ายหรือขวาที่มีค่าใกล้เคียงที่สุดเเละทำเรื่อยๆจนเจอค่าที่ค้นหา ทำให้มีความรวดเร็วมากกว่า
